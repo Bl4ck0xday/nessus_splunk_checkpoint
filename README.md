@@ -37,7 +37,7 @@ cd nessus_splunk_checkpoint
 pip install -r requirements.txt
 ```
 
-### 3. Configura tus credenciales
+3. Configura tus credenciales
 
 Edita el archivo `servers.json` e incluye todas las siguientes variables:
 
