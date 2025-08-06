@@ -37,12 +37,36 @@ cd nessus_splunk_checkpoint
 pip install -r requirements.txt
 ```
 
-3. Configura tus credenciales en el archivo `servers.json` **o** define las variables de entorno:
-```bash
-export HEC_TOKEN="tu_token_hec"
-export N_ACCESS_KEY="tu_access_key"
-export N_SECRET_KEY="tu_secret_key"
-```
+3. Configura tus credenciales:
+
+Edita el archivo servers.json e incluye todas las siguientes variables:
+
+En la sección Splunk:
+
+Address: IP o DNS del servidor Splunk.
+
+Port: Puerto del HEC (por defecto 8088).
+
+Protocol: http o https.
+
+HEC_TOKEN: Token del HTTP Event Collector.
+
+Sourcetype: Sourcetype para los eventos, por ejemplo nessus:json.
+
+Host: Nombre o etiqueta que identificará los eventos en Splunk.
+
+En la sección Nessus:
+
+Address: IP o DNS del servidor Nessus.
+
+Port: Puerto del API de Nessus (por defecto 8834).
+
+Protocol: http o https.
+
+AccessKey: Access Key generada en la interfaz de Nessus.
+
+SecretKey: Secret Key correspondiente.
+
 
 4. Ejecuta el script:
 ```bash
