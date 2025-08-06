@@ -1,0 +1,17 @@
+{
+  "Splunk": {
+    "Address": "DIRECCION INPUT DE SPLUNK", // URL o IP del Splunk HEC
+    "Port": 443,
+    "Protocol": "https", // Protocolo a utilizar, puede ser http o https
+    "HEC_TOKEN": "SPLUNK HEC_TOKEN", // Token de acceso para Splunk HEC
+    "Sourcetype": "nessus:json", // Sourcetype for Nessus data Default
+    "Host": "nessus" // Hostname para Splunk, puede ser cualquier valor descriptivo
+  },
+  "Nessus": {
+    "Address": "URL O IP DE NESSUS", // URL o IP del servidor Nessus
+    "Port": 443,
+    "Protocol": "https",
+    "AccessKey": "ACCESS DE NESSUS", 
+    "SecretKey": "SECRET DE NESSUS"
+  }
+}
